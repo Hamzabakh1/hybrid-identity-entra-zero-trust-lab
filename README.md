@@ -22,14 +22,6 @@ Design scoped synchronization, choose an authentication method, stage MFA/Condit
 
 This editable SVG is the reference design; its tenant and synchronization paths have not been deployed or verified.
 
-```mermaid
-flowchart LR
-  AD[corp.example.test AD] -->|Scoped identities| S[SYNC01]
-  S -->|Outbound TLS provisioning| E[Microsoft Entra ID]
-  E -->|Token / CA evaluation| A[Microsoft 365 apps]
-  M[MGMT01] -->|Scoped Graph read| E
-```
-
 See [full architecture](ARCHITECTURE.md) and [editable flow](assets/diagrams/hybrid-identity.mmd).
 
 ## Technology stack and infrastructure requirements
