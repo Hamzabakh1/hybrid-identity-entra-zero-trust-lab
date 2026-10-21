@@ -1,0 +1,17 @@
+Timestamp UTC: 2026-10-21T06:01:54.5591750Z
+Command: python -m unittest discover -s tests -v
+Exit code: 0
+test_reject_all_users_and_missing_emergency_exclusion (test_ca_policy.PolicyTests.test_reject_all_users_and_missing_emergency_exclusion) ... ok
+test_reject_enforced_policy (test_ca_policy.PolicyTests.test_reject_enforced_policy) ... ok
+test_safe_report_only_pilot_template (test_ca_policy.PolicyTests.test_safe_report_only_pilot_template) ... ok
+test_200_identity_pilot_dataset_is_synthetic (test_lifecycle.LifecycleTests.test_200_identity_pilot_dataset_is_synthetic) ... ok
+test_join (test_lifecycle.LifecycleTests.test_join) ... ok
+test_leave (test_lifecycle.LifecycleTests.test_leave) ... ok
+test_move (test_lifecycle.LifecycleTests.test_move) ... ok
+test_reject_invalid_move (test_lifecycle.LifecycleTests.test_reject_invalid_move) ... ok
+test_reject_real_identity (test_lifecycle.LifecycleTests.test_reject_real_identity) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK

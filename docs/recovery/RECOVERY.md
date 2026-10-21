@@ -1,0 +1,3 @@
+# Identity recovery design
+
+**DOCUMENTED ONLY.** Preserve two monitored emergency access accounts excluded from restrictive enforced policies; test them regularly. Export sync configuration and document restore/staging procedure. For sync failure, stop uncontrolled retries, inspect agent and export errors, then recover from a known configuration. For accidental deprovisioning, investigate authoritative on-premises state and retention/recycle capabilities before restoring a user; avoid duplicate identities. For CA lockout, use emergency access and rollback the specific policy. Record actual RPO/RTO only after exercises. [Microsoft emergency access guidance](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access).

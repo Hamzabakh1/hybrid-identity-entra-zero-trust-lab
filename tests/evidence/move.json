@@ -1,0 +1,15 @@
+{
+  "id": "lab.salma.atlas",
+  "previous_state": "active",
+  "next_state": "active",
+  "previous_department": "Finance",
+  "next_department": "Operations",
+  "proposed_steps": [
+    "approve role change",
+    "remove old group",
+    "assign new group",
+    "sync identity",
+    "review access"
+  ],
+  "evidence_type": "SIMULATED_PLAN_NO_DIRECTORY_CHANGE"
+}

@@ -1,0 +1,7 @@
+flowchart LR
+  U[Lab user in AD] --> DC[DC01 / DC02]
+  DC -->|Scoped directory read| SYNC[SYNC01 Connect Sync or Cloud Sync agent]
+  SYNC -->|Outbound TLS| TENANT[Approved Entra test tenant]
+  TENANT -->|Conditional Access evaluation| APP[Microsoft 365 app]
+  ADMIN[MGMT01] -->|Narrow Graph scope| TENANT
+  EM[Emergency access account] -->|Excluded from restrictive enforced policy| TENANT

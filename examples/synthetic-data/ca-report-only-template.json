@@ -1,0 +1,15 @@
+{
+  "displayName": "LAB - pilot MFA evaluation - report only",
+  "state": "enabledForReportingButNotEnforced",
+  "conditions": {
+    "users": {
+      "includeGroups": ["PILOT_GROUP_ID"],
+      "excludeGroups": ["EMERGENCY_ACCESS_GROUP_ID"]
+    },
+    "clientAppTypes": ["all"]
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": ["mfa"]
+  }
+}

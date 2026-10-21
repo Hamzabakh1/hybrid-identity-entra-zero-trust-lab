@@ -1,0 +1,3 @@
+# Prerequisites
+
+**DOCUMENTED ONLY.** Require an isolated AD lab, approved Entra test tenant, verified routable UPN domain or mapping, Hybrid Identity Administrator role, a domain-joined supported Windows Server for sync, outbound TLS and time synchronization. Check current [Connect Sync prerequisites](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-install-prerequisites) or [Cloud Sync prerequisites](https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/how-to-prerequisites) before selecting. Entra Conditional Access requires eligible P1 licensing; risk-based policies and PIM may require P2, depending on feature. Verify actual entitlements. No tenant/role/license was verified in this execution environment.

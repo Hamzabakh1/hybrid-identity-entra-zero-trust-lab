@@ -1,0 +1,5 @@
+# Hybrid identity architecture
+
+**DOCUMENTED ONLY.** On-premises `corp.example.test` is the source for six department identities. SYNC01 (.55) is a domain-joined tier 0 server that reads only selected OUs and communicates outbound to an approved test tenant. The `.test` UPN suffix is not a verified public domain; before real sync, use a domain the tenant owner controls or a documented alternate UPN mapping. Microsoft Entra Connect Sync and Cloud Sync are alternatives to evaluate, not two simultaneous writers for the same object scope.
+
+Password hash sync with seamless SSO is a candidate low-complexity choice; PTA and federation introduce additional dependencies. Authentication method requires separate validation from synchronization. Conditional Access begins scoped and report-only where supported; enforced restrictive policies exclude monitored emergency access accounts. PIM and risk-based features depend on verified licenses. Graph automation uses narrow scopes and a checked tenant context. See [editable diagram](assets/diagrams/hybrid-identity.mmd).

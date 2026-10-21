@@ -1,0 +1,3 @@
+# Test methodology
+
+Offline `unittest` checks join, move, leave, invalid state, real-name rejection the 200-identity synthetic pilot dataset and a report-only Conditional Access template with pilot group and emergency exclusion. It proves deterministic plan output only. Tenant integration must validate OU scope, matching/source anchor, export success, sign-in method, MFA, report-only CA result, break-glass access, Graph context and deprovisioning. Compare logs by immutable ID and timestamp; retain tenant ID and evidence securely. License-dependent tests are skipped until entitlements are verified. See [validation report](VALIDATION_REPORT.md).
